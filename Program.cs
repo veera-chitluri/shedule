@@ -1,17 +1,18 @@
 ﻿using System;
 
-namespace adding
+namespace myfirstprogram
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Enter the intial name");
-            string intialName = Console.ReadLine();
-            Console.WriteLine("Enter the end name");
-            string endName = Console.ReadLine();
-            Console.WriteLine("Name is "+intialName+" "+endName);
-
+            int num1,num2,total;
+            Console.WriteLine("Enter Number 1");
+            num1 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine("Enter Number 2");
+            num2 = Convert.ToInt32(Console.ReadLine());
+            total = num1 + num2;
+            Console.WriteLine("{0} + {1} = {2}",num1,num2,total);
         }
     }
 }
